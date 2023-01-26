@@ -1,0 +1,230 @@
+html
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    cursor: url("/images/cursor.png"), auto;
+}
+body
+{
+    width: 100%;
+    background-image: url("/images/7_grain_texture.jpg");
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.rappers::-webkit-scrollbar
+{
+    max-width: 2px;
+}
+/* Track */
+.rappers::-webkit-scrollbar-track
+{
+    background: #020202;
+    border-radius: 10px;
+}
+/* Handle */
+.rappers::-webkit-scrollbar-thumb
+{
+    background: #55ff00;
+    border-radius: 10px;
+    border: 5px solid #000000;
+}
+/* Handle on hover */
+.rappers::-webkit-scrollbar-thumb:hover
+{
+    background: #55ff00;
+    border-radius: 10px;
+    border: 6px solid #000000;
+}
+p
+{
+    color: #FFFFFF;
+    transition: color 0.3s, font-size 0.3s;
+}
+body
+{
+    overflow: hidden;
+    margin: 0;
+}
+.soundcloud
+{
+    width: 90%;
+    height: 15%;
+    position: sticky;
+    transform: translateY(-400%);
+    border-radius: 5px;
+    margin-left: 7px;
+    background: rgba(255, 77, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.instagram
+{
+    width: 90%;
+    height: 15%;
+    position: sticky;
+    transform: translateY(-385%);
+    border-radius: 5px;
+    margin-left: 7px;
+    background: rgba(223, 0, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.tiktok
+{
+    width: 90%;
+    height: 15%;
+    position: sticky;
+    transform: translateY(-370%);
+    border-radius: 5px;
+    margin-left: 7px;
+    background: rgba(0, 255, 188, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.youtube
+{
+    width: 90%;
+    height: 15%;
+    position: sticky;
+    transform: translateY(-355%);
+    border-radius: 5px;
+    margin-left: 7px;
+    background: rgba(255, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+h4
+{
+    text-align: left;
+    font-size: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 40px #FFFFFF, 0 0 80px #FFFFFF;
+}
+h2
+{
+    text-align: left;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 40px #FFFFFF, 0 0 80px #FFFFFF;
+}
+.label
+{
+    font-size: 10px;
+    background-blend-mode: saturation;
+    background-size: 100% 100%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgb(85, 0, 255);
+    border: 1px solid rgb(85, 0, 255);
+}
+.container
+{
+    display: flex;
+    padding: 0;
+    transition: border-color 0.1s ease-in;
+    height: 5rem;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 10px;
+    background-blend-mode: saturation;
+    background-size: 100% 100%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgb(85, 0, 255);
+    border: 1px solid rgb(85, 0, 255);
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: #1b0059;
+    animation: gradient 2s ease infinite;
+}
+.body
+{
+    transition: border-color 0.1s ease-in;
+    height: 50rem;
+    text-align: center;
+    font-size: 10px;
+    background-blend-mode: saturation;
+    background-size: 100% 100%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 10px rgb(85, 0, 255);
+    border: 1px solid rgb(85, 0, 255);
+}
+@keyframes gradient
+{
+    0% { background-position: 0% 50%;}
+    50% { background-position: 100% 50%;}
+    100% { background-position: 0% 50%;}
+}
+.card
+{
+    list-style-type: none;
+    transition: border-color 0.1s ease-in;
+    height: 12rem;
+    min-width: 12rem;
+    color: #00ff55;
+    text-align: center;
+    margin: 2.25rem;
+    font-size: 10px;
+    border: 1px solid #55ff00;
+    box-shadow: 0 0 5px #55ff00;
+    background: rgb(2, 2, 2);
+    background-blend-mode: overlay;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.card img
+{
+    border-radius: 10px;
+    position: sticky;
+}
+.rappers
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    transition: border-color 0.1s ease-in;
+    height: 20rem;
+    text-align: center;
+    margin: 2rem;
+    font-size: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgb(85, 0, 255);
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    backdrop-filter: blur(10px);
+    animation: gradient 1s ease infinite;
+    background: rgba(85, 0, 255, 0.58);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 2px solid rgb(85, 0, 255);
+}
+li a:hover
+{
+    text-shadow: 0 0 10px #55ff00;
+    color: white;
+    font-size: 32px;
+    transition: font-size 2s ease-in-out;
+}
+button
+{
+    border-radius: 50%;
+    border: #5500ff;
+    background: #5500ff;
+    text-align: center;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

@@ -1,0 +1,103 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
+</head>
+<body>
+<div class ="container">
+  <ul>
+    <li><a href="family.html">Family</a></li>
+  </ul>
+</div>
+<div class = "body">
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script type="text/javascript">
+  var buttonEl = document.querySelectorAll('button');
+  function animateButton(el, scale, duration, elasticity)
+  {
+    anime.remove(el);
+    anime({
+      targets: el,
+      scale: scale,
+      duration: duration,
+      elasticity: elasticity
+    });
+  }
+  function enterButton(el)
+  {
+    animateButton(el, 1.1, 800, 400)
+  };
+  function leaveButton(el)
+  {
+    animateButton(el, 1, 600, 400)
+  };
+  for (var i = 0; i < buttonEl.length; i++)
+  {
+    buttonEl[i].addEventListener('mouseenter', function(e)
+    {
+      enterButton(e.target);
+      e.target.style.border = "2px solid #55ff00";
+      e.target.style.color = "#55ff00";
+      e.target.style.boxShadow = "0 0 10px #55ff00";
+    }, false);
+    buttonEl[i].addEventListener('mouseleave', function(e)
+    {
+      e.target.style.boxShadow = "0 0 10px #5500ff";
+      leaveButton(e.target)
+      setTimeout(function()
+      {
+        e.target.style.boxShadow = "0 0 20px #5500ff";
+      }, 50);
+    }, false);
+  }
+
+  // on hover container make bigger
+    var containerEl = document.querySelectorAll('.container');
+    function animateContainer(el, scale, duration, elasticity)
+    {
+      anime.remove(el);
+      anime({
+        targets: el,
+        scale: scale,
+        duration: duration,
+        elasticity: elasticity
+      });
+    }
+    function enterContainer(el)
+    {
+      animateContainer(el, 1.01, 800, 400)
+    };
+    function leaveContainer(el)
+    {
+      animateContainer(el, 1, 600, 400)
+    };
+    for (var i = 0; i < containerEl.length; i++)
+    {
+      containerEl[i].addEventListener('mouseenter', function(e)
+      {
+        enterContainer(e.target);
+        e.target.style.border = "2px solid #55ff00";
+        e.target.style.color = "#55ff00";
+        e.target.style.boxShadow = "0 0 10px #55ff00";
+      }, false);
+      containerEl[i].addEventListener('mouseleave', function(e)
+      {
+        leaveContainer(e.target)
+        setTimeout(function()
+        {
+          e.target.style.boxShadow = "0 0 10px #5500ff";
+          e.target.style.border = "2px solid #5500ff";
+        }, 50);
+      }, false);
+    }
+</script>
+</body>
+</html>
